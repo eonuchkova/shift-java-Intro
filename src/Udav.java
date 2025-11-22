@@ -1,25 +1,25 @@
 public class Udav {
     public static void main(String[] args) {
-        float udavCm=380f; //uCm - длина удава в сантиметрах
-        float udavM= udavCm/100f; //uM - длина удава в метрах
+        float boaCm=380; //boaCm - длина удава в сантиметрах
+        float boaHeight= boaCm/100; //boaHeight - длина удава в метрах
 
-        // Количество животных в одном удаве, где Count-количество, popug-попугай, martysh-мартышка, elephant-слоненок,
-        float popugCount=38f;
-        float martyshCount=5f;
-        float elephantCount=2f;
+        // Количество животных в одном удаве, где Count-количество
+        float parrotCount=38;
+        float monkeyCount=5;
+        float elephantCount=2;
 
         // Height - рост
-        float popugHeight= udavM/popugCount;
-        float martyshHeight= udavM/martyshCount;
-        float elephantHeight= udavM/elephantCount;
+        float parrotHeight= boaHeight/parrotCount;
+        float monkeyHeight= boaHeight/monkeyCount;
+        float elephantHeight= boaHeight/elephantCount;
 
-        float SumAnimalsH = udavM + popugHeight + martyshHeight + elephantHeight;
+        float SumAnimalsHeight = boaHeight + parrotHeight + monkeyHeight + elephantHeight;
 
         System.out.println("Вычисляем рост персонажей мультика '38 попугаев'");
-        System.out.println("Рост удава = " + udavM);
-        System.out.println("Рост попугая = " + popugHeight);
-        System.out.println("Рост мартышки = " + martyshHeight);
+        System.out.println("Рост удава = " + boaHeight);
+        System.out.println("Рост попугая = " + parrotHeight);
+        System.out.println("Рост мартышки = " + monkeyHeight);
         System.out.println("Рост слонёнка = " + elephantHeight);
-        System.out.println("Суммарный рост всех = " + SumAnimalsH);
+        System.out.println("Суммарный рост всех = " + SumAnimalsHeight);
     }
 }
