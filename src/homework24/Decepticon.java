@@ -1,6 +1,6 @@
 package homework24;
 
-public class Decepticon extends Transformer {
+public class Decepticon extends Transformer implements Action {
 
     String teamName;
     final String eyeColor = "red";
@@ -11,18 +11,6 @@ public class Decepticon extends Transformer {
         this.teamName = teamName;
     }
 
-    void transformToWeapon() {
-        System.out.println(name + " transforms into a weapon");
-    }
-
-    void transformToEquipment() {
-        System.out.println(name + " transforms into an equipment");
-    }
-
-    void transformToPlane() {
-        System.out.println(name + " transforms into a plane");
-    }
-
     void showProperties() {
         System.out.println("Name: " + name);
         System.out.println("Team: " + teamName);
@@ -30,6 +18,20 @@ public class Decepticon extends Transformer {
         System.out.println("Kindness: " + kindness);
     }
 
+    @Override
+    public void fire() {
+        System.out.println(name + " is firing");
+    }
+
+    @Override
+    public void charge() {
+        System.out.println(name + " is charging");
+    }
+
+    @Override
+    public void transform() {
+        System.out.println(name + " is transforming into weapon");
+    }
 }
 
 
