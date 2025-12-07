@@ -1,4 +1,6 @@
 import java.util.Scanner;
+import homework232.MultiplicationTableFile;
+
 
 public class MultiplicationTable {
 
@@ -77,5 +79,8 @@ public class MultiplicationTable {
         }
         int cellWidth = maxWidth + 1;
         printTable(values, cellWidth);
+
+        MultiplicationTableFile.writeTable(values, cellWidth, "MultiplicationTable.txt");
     }
+
 }
