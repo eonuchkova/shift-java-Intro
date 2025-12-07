@@ -1,7 +1,7 @@
 package homework24;
 
 public class Transformer {
-    String name;
+    public String name;
 
     public Transformer(String name) {
         this.name = name;

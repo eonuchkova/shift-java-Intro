@@ -2,8 +2,8 @@ package homework24;
 
 public class Decepticon extends Transformer {
 
-    String teamName;
-    final String eyeColor = "red";
+    public String teamName;
+    public static final String eyeColor = "red";
     boolean kindness = false;
 
     Decepticon(String name, String teamName) {

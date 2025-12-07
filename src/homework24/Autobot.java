@@ -3,8 +3,8 @@ package homework24;
 public class Autobot extends Transformer {
 
     String teamName;
-    final String eyeColor = "blue";
-    boolean kindness = true;
+    public static final String eyeColor = "blue";
+    public boolean kindness = true;
 
     Autobot(String name, String teamName) {
         super(name);

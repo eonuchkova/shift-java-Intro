@@ -3,7 +3,7 @@ package homework24;
 public class MainTransformers {
     public static void main(String[] args) {  // точка входа main
         Autobot bumblebee = new Autobot("Bumblebee", "Autobots");
-        System.out.println( "New transformer" + "is created");
+        System.out.println( "New transformer is created");
 
         bumblebee.showProperties();
         bumblebee.run();
